@@ -7,11 +7,11 @@
 
 void print_binary(unsigned long int n)
 {
-	int k, count = 0;
+	int k = 63, count = 0;
 	unsigned long int current;
 
-	for (k = 63; k >= 0; k--)
-	{
+	for (; k >= 0; k--)
+	{i
 		current = n >> k;
 
 		if (current & 1)
@@ -25,4 +25,3 @@ i	}
 	if (!count)
 		_putchar('0');
 }
-
