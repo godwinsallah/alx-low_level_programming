@@ -4,15 +4,14 @@
  * print_binary - prints the binary equivalent of a decimal number
  * @n: number to print in binary
  */
-
 void print_binary(unsigned long int n)
 {
-	int k = 63, count = 0;
+	int i, count = 0;
 	unsigned long int current;
 
-	for (; k >= 0; k--)
-	{i
-		current = n >> k;
+	for (i = 63; i >= 0; i--)
+	{
+		current = n >> i;
 
 		if (current & 1)
 		{
@@ -21,7 +20,7 @@ void print_binary(unsigned long int n)
 		}
 		else if (count)
 			_putchar('0');
-i	}
+	}
 	if (!count)
 		_putchar('0');
 }
