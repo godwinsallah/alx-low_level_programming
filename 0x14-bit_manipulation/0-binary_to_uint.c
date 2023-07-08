@@ -1,5 +1,5 @@
 #include "main.h"
-#include <cmath.h>
+
 
 /**
  * binary_to_uint -program to convert binary to unsigned int
@@ -21,5 +21,5 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		result = 2 * result + (b[c] - '0');
 	}
-	return (result)
+	return (result);
 }
