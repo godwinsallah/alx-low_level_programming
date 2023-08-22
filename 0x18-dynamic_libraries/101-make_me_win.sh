@@ -1,4 +1,8 @@
 #!/bin/bash
 
-sleep 97 && echo -e "9\n8\n10\n24\n75\n9" > input.txt
+# Wait for 98 seconds before running the gm program
+sleep 98
+
+# Run the gm program with the specified numbers
+./gm 9 8 10 24 75 9
 
